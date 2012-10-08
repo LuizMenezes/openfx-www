@@ -1,0 +1,21 @@
+{heading:Building OpenFX}
+<p>
+Please look at our <a href="building.html"><b>build instructions</b></a> page.
+</p>
+
+{heading:Contributing to OpenFX}
+<p>
+There are many ways to contribute to OpenFX.  If you are an artist, you can contribute to our
+<a href="{url:gallery/index.html}"><b>gallery</b></a> with your latest masterpiece.
+If you are a programmer, you could help us <a href="bugs.html"><b>fix bugs</b></a> and
+<a href="plugins.html"><b>develop plugins</b></a>.  If you are good with user interface
+design you can help with suggestions for improving the usebility of OpenFX. 
+</p>
+
+{heading:Join our mailing lists}
+<p>
+The best way to get involved immediately is to
+<a href="{url:mail.html}"><b>join our mailing lists</b></a>
+and get involved in dicussing the development of OpenFX.
+</p>
+

@@ -1,0 +1,280 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./MetaShapes_files/filelist.xml">
+<title>MetaShape modeling in OpenFX</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Rodney Butrymowicz</o:Author>
+  <o:LastAuthor>Rodney Butrymowicz</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>61</o:TotalTime>
+  <o:Created>2002-10-07T00:10:00Z</o:Created>
+  <o:LastSaved>2002-10-07T00:10:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>572</o:Words>
+  <o:Characters>3261</o:Characters>
+  <o:Company>The SmartWare Group</o:Company>
+  <o:Lines>27</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>4004</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>6 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:WW6BorderRules/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:AutoSpaceLikeWord95/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:13.0pt;
+	font-family:Arial;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>MetaShape modeling in OpenFX</h1>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Disclaimer:</h2>
+
+<p class=MsoNormal>I did not create the majority of the code in this
+plugin.<span style="mso-spacerun: yes">  </span>The core of the MetaShape
+plugin is the example code in the Implicit Surface plugin.<span
+style="mso-spacerun: yes">  </span>The main algorithm for creating the surface
+of the MetaShape is directly from the original.<span style="mso-spacerun:
+yes">  </span>I provided a surface function, a few controls, and a method for
+defining shapes and properties using the Skeleton naming conventions.<span
+style="mso-spacerun: yes">  </span>The algorithm seems to have some problems
+with disjoint surfaces, and I will look into improving the code as I get time.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Blobs and MetaShapes</h2>
+
+<p class=MsoNormal>There are plenty of Blob/Metaball implementations documented
+in great detail on the Web, and I chose the POVRAY definition for it’s general
+acceptance, and because it would be fairly easy to write a translator for
+POVRAY files.<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal>The function used is:<span style="mso-spacerun: yes"> 
+</span><b><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt'>Density =
+Strength * ( 1 – ( Distance / Radius )² )²<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>POVRAY defines two types of MetaShapes; Blobs and
+Cylindrical Blobs</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>MetaShape Types</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Each edge with both ends selected is considered a potential
+MetaShape by the plugin.<span style="mso-spacerun: yes">  </span>In addition
+both vertices must be attached to a skeleton node (or parent node) named for a
+MetaShape.<span style="mso-spacerun: yes">  </span>I have initially implemented
+two types of shapes; MetaBalls or Blobs, and MetaSplines.<span
+style="mso-spacerun: yes">  </span>MetaSplines are exactly like POVRAY
+Cylindrical Blobs except that each end can have it’s own Strength and Radius
+properties.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>MetaShape Properties</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The properties of the MetaShape are stored, like the type
+names, in the skeleton naming hierarchy.<span style="mso-spacerun: yes"> 
+</span>Two properties are defined;<span style="mso-spacerun: yes"> 
+</span>Strength and Radius.<span style="mso-spacerun: yes">  </span>The Radius
+property is only used for MetaSplines, because the length of the edge defining
+the MetaBall represents the diameter.<span style="mso-spacerun: yes"> 
+</span>Properties are determined by looking at the skeleton node names from the
+vertice’s node up to the root node of the skeleton.<span style="mso-spacerun:
+yes">  </span></p>
+
+<p class=MsoNormal>To define a property, name the node<span
+style="mso-spacerun: yes">  </span>STRENGTH &lt;n&gt;<span style="mso-spacerun:
+yes">  </span>or RADIUS &lt;n&gt;, where &lt;n&gt; is a valid floating point
+number.<span style="mso-spacerun: yes">  </span>Comparisons are always case
+insensitive. (This includes type names)</p>
+
+<p class=MsoNormal>If no matching property name is found, the value defaults to
+1.0.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>MetaBalls or Blobs</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The edge represents a MetaBall with its position centered on
+the edge midpoint, and the diameter of the MetaBall being determined by the
+length of the edge.<span style="mso-spacerun: yes">  </span>Strength is
+determined by averaging the strengths of the two vertices of the edge.<span
+style="mso-spacerun: yes">  </span>A chain of MetaBalls can be created by
+drawing a zig-zag line such that the midpoints of the edges line in a
+line.<span style="mso-spacerun: yes">  </span>Remember that the strength can
+also be negative ( or zero when averaged ).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>MetaSplines</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>In this case the edge represents the axis and length of the
+“cylindrical” shape.<span style="mso-spacerun: yes">  </span>The actual shape
+when the ends of the spline are different sizes is more like a rounded
+cone.<span style="mso-spacerun: yes">  </span>( I like to call them “Weebles”
+).</p>
+
+<p class=MsoNormal>The Radius and Strength properties are both defined using
+the property naming convention, and vary linearly along the length of the
+MetaSpline.<span style="mso-spacerun: yes">  </span>An spline edge that is
+unconnected to other spline edges, and has the same radius and strength at both
+ends is equivalent to the POVRAY Cylindrical Blob.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Other MetaShapes</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>As I was looking for ways to store information using only
+edge information, I realized that you can store great deal of information with
+just two points in space.<span style="mso-spacerun: yes">  </span>( Position,
+Direction, and Distance )</p>
+
+<p class=MsoNormal>I realized that other shapes could be defined using just
+edges, and here are some of my ideas for additional shapes.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b><u>MetaToroid:</u></b><span style="mso-spacerun: yes"> 
+</span>The edge midpoint is the center, the edge is the axis of rotation, and
+the length is the outer radius.<span style="mso-spacerun: yes">  </span>Radius
+(Inner) is defined like splines.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b><u>MetaPlane/Disk:</u></b><span style="mso-spacerun:
+yes">  </span>The edge midpoint is on the plane, and the edge points away from
+the plane, and the length of the edge is the thickness of the plane.<span
+style="mso-spacerun: yes">  </span>Radius could be defined to for a Disk shape.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Examples</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Please include the example models included with the plugin
+if you re-distribute the code.<span style="mso-spacerun: yes">  </span>The
+examples included should demonstrate the naming conventions and tips and
+shortcuts for modeling without the full advantage of real-time feedback.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

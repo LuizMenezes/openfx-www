@@ -1,0 +1,52 @@
+<pre>
+OpenFX 3D Modelling, Animation and Rendering package released!
+==============================================================
+
+The OpenFX Development Team (core@openfx.org) is pleased to announce
+the first release of OpenFX under the terms of the GNU Public
+License.  It is available for download from our website (http://openfx.org)
+
+FEATURES
+--------
+
+OpenFX consists of a suite of applications that provide advanced
+3D modelling, animation, and rendering capabilities.
+
+The feature set ranges from a full rendering and raytracing engine,
+NURBS support, kinematics-based animation, morphing, procedural
+textures, an extensive output plugin API for post-processing of
+effects, and so forth.  A complete modelling and animation environment
+is provided, and imports/exports from other popular 3D packages are
+also present.
+
+Some screenshots and example outputs are available from the OpenFX
+gallery (http://openfx.org/gallery).  The full binary release also
+bundles a large number of example models, animations and textures.
+
+PLATFORMS
+---------
+
+Currently, OpenFX works under the Win32 platform, but plans are
+afoot to port it to other operating systems, such as Linux.  Solutions
+for this are currently being investigated, but they range from the
+use of the WINE project (http://www.winehq.com), to a cross-platform
+user-interface widget set (dom@openfx.org).  Portions of OpenFX,
+such as the renderer, are already easily portable to other platforms,
+such as Linux, *BSD, or Solaris.
+
+CONTACT
+-------
+
+We provide a set of mailing lists for users and interested developers
+to contact each other.  Full details have been posted to our website
+(http://openfx.org/mail)
+
+CREDITS
+-------
+
+OpenFX was authored by Dr. Stuart Ferguson (stuart@openfx.org),
+from the Queen's University of Belfast, and he made the decision
+to release the code under the terms of the GNU Public License. Anil
+Madhavapeddy (anil@recoil.org) and Dominic Ludlam (dom@openfx.org)
+helped to test and prepare this release.
+</pre>

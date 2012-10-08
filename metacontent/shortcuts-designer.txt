@@ -1,0 +1,107 @@
+<center>
+<h1>Shortcuts for Designer</h1>
+<p><strong>Contributed By <a href="mailto:keith.kelly@zail.freeservers.com">Keith Kelly</a></strong></p>
+<br /><br />
+
+<table width="90%" cellpadding="2">
+<tr>
+ <th align="left" colspan="2">Function Keys</th>
+ <th align="left" colspan="2">Single Letter Shortcuts</th>
+</tr>
+<tr><td>F1</td><td>Bring up the help menu for the current program</td><td>D</td><td>Draw</td></tr>
+<tr><td>F2</td><td>Move 3D cursor to nearest vertex</td><td>G</td><td>Grid</td></tr>
+<tr><td>F3</td><td>Move 3D cursor to the centroid of the selected vertexes</td><td>M</td><td>Move</td></tr>
+<tr><td>F4</td><td>Reset Quad view windows; Shift-F4 for Single View</td><td>P</td><td>Pan</td></tr>
+<tr><td>F5</td><td>Show/Hide Edges</td><td>Q</td><td>Object Selector</td></tr>
+<tr><td>F6</td><td>Show/Hide Joins (the edges between hidden and visible vertexes)</td><td>R</td><td>Rotate</td></tr>
+<tr><td>F7</td><td>Shape Dialog</td><td>S</td><td>Scale</td></tr>
+<tr><td>F8</td><td>Material Dialog</td><td>V</td><td>Vertex Selector</td></tr>
+<tr><td>F9</td><td>Crosswire/Crosshair Cursor Toggle</td><td>Z</td><td>Zoom</td></tr>
+<tr><td>F10</td><td>(No action)</td><td>+</td><td>Zoom In</td></tr>
+<tr><td>F11</td><td>Hide OpenGL Shading View</td><td>-</td><td>Zoom Out</td></tr>
+<tr><td>F12</td><td>Quick Render</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+
+<p><strong>Hotkeys</strong></p>
+
+<table width="90%" cellpadding="2">
+<tr><td>Ctrl+A</td><td>Select All</td><td>Ctrl+M</td><td>Mirror</td><td>Ctrl+V</td><td>Subdivide</td></tr>
+<tr><td>Ctrl+B</td><td>Build Bezier Curves</td><td>Ctrl+N</td><td>New Model</td><td>Ctrl+W</td><td>Viewer</td></tr>
+<tr><td>Ctrl+D</td><td>Deselect All</td><td>Ctrl+O</td><td>Open Model</td><td>Ctrl+X</td><td>Delete Edge</td></tr>
+<tr><td>Ctrl+E</td><td>Extrude</td><td>Ctrl+P</td><td>Print</td><td>Ctrl+Z</td><td>Undo</td></tr>
+<tr><td>Ctrl+F</td><td>Fill To Cursor</td><td>Ctrl+Q</td><td>Quit</td><td>Shift+A</td><td>Pose</td></tr>
+<tr><td>Ctrl+G</td><td>Snap To Grid</td><td>Ctrl+R</td><td>Render</td><td>Shift+S</td><td>Swap Selected</td></tr>
+<tr><td>Ctrl+H</td><td>Hide Selected</td><td>Ctrl+S</td><td>Save</td><td></td><td></td></tr>
+<tr><td>Ctrl+L</td><td>Lathe</td><td>Ctrl+U</td><td>Reveal Hidden</td><td></td><td></td></tr>
+</table>
+
+<h2>Tools Related Shortcuts</h2>
+</center>
+
+<p>
+Remember, Look on the bottom-left of the screen for helpful hints.
+</p>
+
+<p>
+Object Selector - If you hold the ctrl key while clicking near a vertex, you can place the 3D
+cursor without (de)selecting any objects.
+</p>
+
+<p>
+Vertex Selector Tool - Holding down shift will allow you to lasso vertexes.  Holding down ctrl
+will make the selection marquee a circle.  Holding down alt, even if you are holding down shift
+or ctrl at the time, will make the tool deselect instead of select.
+</p>
+
+<p>
+Selection Marquee Tool - Holding down shift will allow you to lasso vertexes.  Holding down ctrl
+will make the selection marquee a circle.  Double clicking this icon turns it into Deselection
+Marquee Tool.
+</p>
+
+<p>
+Pan - Double clicking this icon makes the view center on the 3D cursor.
+</p>
+
+<p>
+Zoom - Double clicking this icon will adjust the view to fit everything in it.
+</p>
+
+<p>
+Move - Double clicking this icon will bring up a dialogue box that can be used to move the selection
+in any direction by a specified amount of units.  Using the arrow keys allows you to move the
+selection one pixel at a time.  Using shift and the arrow keys will move the selection 5 pixels at
+a time.
+</p>
+
+<p>
+Rotate - This is similar to move.  Double clicking this icon will bring up a dialogue box that can
+be used to rotate the selection by a specific degree.  Using the arrow keys allows you to rotate the
+selection one degree at a time.  Using shift and the arrow keys will rotate the selection 5 degrees
+at a time.
+</p>
+
+<p>
+Scale - Double click to bring up the scale dialog.  Hold shift to scale in Y.  Hold ctrl to scale in Z.
+Hold alt to scale in X.
+</p>
+
+<p>
+Draw/Plot - Double click to switch between draw and plot.  Holding shift will keep the lines going in a
+direction that is a multiple of 45°.  Hold the ctrl key to stop vertices from being selected while you
+reposition the 3D cursor.  Hold the Alt key while you click to start a new curve.  Note that you can
+draw off an existing vertex by clicking on it first.  To use plot hold down the left mouse button to
+position the vertex then click the right to place a vertex.
+</p>
+
+<p>
+Bend - Double click to use the Form tool.
+</p>
+
+<p>
+Shape - Use F7 for a more detailed version of this button.
+</p>
+
+<p>
+Render - CTRL-R does the same thing.
+</p>

@@ -1,0 +1,20 @@
+title:		Trisect (smooth subdivide)
+author:		<a href="mailto:rodney@qwest.net">Rodney Butrymowicz</a>
+version:	1.0
+modules:	1
+source:		trisect_src.zip
+file:		trisect.zip
+install:	Once you have downloaded the package, the trisect.dll and trisect.afx
+		files need to be extracted using a tool such as WinZip and placed
+		in the plugins directory inside the directory that you installed OpenFX
+		(eg. C:\OpenFX\plugins\).   The DLL is the library that executes the
+		action and the AFX files contain the text used in the Plugin Actions
+		submenu of the Actions menu.
+		<br /><br />
+		If you download the source, it should be extracted to the design directory
+		in the openfx source distribution.
+overview:	This implements the 'square root of 3' subdivision algorithm.  This is
+		similar to the tessalate plugin, but it does smoothing and edge rotation.
+
+name1:	trisect.dll
+info1:	This implements a smooth subdivision algorithm, known as the 'square root of 3'.

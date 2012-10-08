@@ -1,0 +1,25 @@
+name:		1
+smallimg:	designer-1-sm.png
+largeimg:	designer-1.png
+brief:		A typical view of the modelling module, viewing a fire-hose nozzle.  The
+		view on the top-right is a real-time OpenGL preview of the module using
+		default lighting and camera angles.  The rest are wireframe views from
+		different angles.  Also notice the menu open on the bottom right.
+
+---
+
+name:		2
+smallimg:	designer-2-sm.png
+largeimg:	designer-2.png
+brief:		In this screenshot, a 'quick render' has been performed, and the OpenGL
+		preview on the top right has had a render performed within it with the
+		default options enabled.
+
+---
+
+name:		3
+smallimg:	designer-3-sm.png
+largeimg:	designer-3.png
+brief:		Fido the lovable OpenFX dog is viewed here in skeletal format.  The popup
+		menu is the skeleton hierarchy, and the wireframe view is in 'pose mode'
+		where the joints can be manipulated.

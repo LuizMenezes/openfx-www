@@ -1,0 +1,38 @@
+{heading:What is OpenFX?}
+<p>
+OpenFX is an Open-Source 3D modeling, animation and rendering suite
+created by <a href="mailto:stuart@openfx.org">Dr. Stuart Ferguson</a>.
+He made the decision to release the source code to the public in the
+middle of 1999, and the product formerly named SoftF/X was renamed
+to <b>OpenFX</b>.  It has now been released under the terms of the
+<a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public Licence</a>.
+</p>
+<p>
+<i>(Stuart will hopefully fill in more of the history of OpenFX here.)</i>
+</p>
+
+{heading:What can OpenFX do?}
+<p>
+A powerful feature-set includes a full renderer and
+raytrace engine, NURBS support, kinematics-based animation, 
+morphing, and an extensive plugin API. 
+</p>
+<p>
+<a href="about-plugins.html">Plugin capabilities</a> include image post
+processor effects such as lens flare, fog and depth of field.  Animation
+effects such as explosions, waves and dissolves add enormously to the
+flexibility of the program.  Check out the
+<a href="about-plugins.html">full list</a> of the various effect types
+and let your imagination run wild!
+</p>
+
+{heading:What platforms does OpenFX run on?}
+<p>
+Currently, OpenFX only runs on the <b>Win32</b> platform, which
+includes Windows 95/98/NT/2000.  There are plans afoot to port
+it to <b>Linux/*BSD platforms</b>, and it currently runs fairly well
+under these by using the <a href="http://www.winehq.com/">WINE</a>
+set of libraries.  If you are interested in helping to port to 
+these platforms, please join our <a href="{url:mail.html}">Development
+Mailing Lists</a> and help out!
+</p>

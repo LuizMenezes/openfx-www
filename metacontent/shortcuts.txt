@@ -1,0 +1,15 @@
+{heading:Command Shortcuts}
+<p>
+Many of the actions in OpenFX are available at the press of a key instead
+of through the menus and toolbars.  In addition, many of the available tools
+behave differently when the Alt, Shift or Ctrl keys are held down.  This page
+contains documentation on what these shortcuts are, and how the modifiers
+affect the various actions.
+</p>
+
+{heading:Shortcut documents}
+<ul>
+<li><a href="{url:resources/shortcuts/animator.html}">Animator shortcuts</a></li>
+<li><a href="{url:resources/shortcuts/designer.html}">Designer shortcuts</a></li>
+</ul>
+

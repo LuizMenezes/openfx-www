@@ -1,0 +1,25 @@
+name:		1
+smallimg:	animator-1-sm.png
+largeimg:	animator-1.png
+brief:		The main screen of the OpenFX Animator, with the classic 4-pane view.
+		The top right window shows an OpenGL preview, and the rest show various
+		angles on the camera angles and movements of the actors within the scene.
+
+---
+
+name:		2
+smallimg:	animator-2-sm.png
+largeimg:	animator-2.png
+brief:		A different view of the animator, with the preview screen maximised, and
+		a 'quick render' drawn in there as a rough idea of what the current frame
+		looks like.  Also notice one of the menus is open on the bottom right.
+
+---
+
+name:		3
+smallimg:	animator-3-sm.png
+largeimg:	animator-3.png
+brief:		Check out the keyframer at the bottom of this shot, along with the co-ordinate
+		window floating on the bottom right.  The render preview on the top right
+		window demonstrates the volumetric fog post-processing plugin, and there is a
+		speedy wireframe of the animation going on to the left.

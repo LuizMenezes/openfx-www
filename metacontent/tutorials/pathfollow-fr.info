@@ -1,0 +1,27 @@
+scope:		Utiliser les paths pour définir le mouvement des actors
+title:		Utiliser les paths pour définir le mouvement des actors
+author:		Tutoriel écrit par <a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+translator:	Tutoriel traduit par <a href="mailto:bs125525@skynet.be">Jean-luc Songa Butera</a>
+steps:		8
+imagesuffix:	jpg
+
+step1:	<b>1ère étape</b><br /><br />Dans le Designer faite un path en utilisant l'outil pen.
+step2:	<b>2ème étape</b><br /><br />Dans le menu File allez à Export Model &gt; Path et sauvez l'objet path en
+	tant que path fermé.
+step3:	<b>3ème étape</b><br /><br />Créer un objet qui va suivre le path et sauvez le.
+step4:	<b>4ème étape</b><br /><br />Dans l'Animator, dans le menu Add actor, séléctinnez path. Cliquez sur Filed
+	et choisissez le path que vous avez crée précédemment dans le Designer. 
+step5:	<b>5ème étape</b><br /><br />Dans le menu Add actor séléctionnez object et choisissez l'objet que vous avez
+	crée précédemment pour suivre le path.
+step6:	<b>6ème étape</b><br /><br />Réglez la longueur de l'animation avec Ctrl+L ou Frame &gt; Set Animation Length
+	dans la barre de menu. Pour cet exemple on a 30 frames. Notez que pour que les
+	paths fonctionnent votre animation DOIT comporter plus de 3 frames.
+step7:	<b>7ème étape</b><br /><br />Séléctionnez l'objet suiveur et double-cliquez sur la position de l'objet dans
+	la timeline à la frame 1. ceci va ouvrir la Mouvement Timeline de Model1Actor.
+step8:	<b>8ème étape</b><br /><br />Dans cette boîte de dialogue appuyez sur Select dans la boîte d'information de
+	l'option Follow et séléctionnez l'objet path. De retour dans la fenêtre principale
+	de la boîte de dialogue assurez-vous que l'option "follow" est cochée.
+	<br /><br />
+	C'est tout. Amusez-vous bien.
+	<br /><br />
+	Téléchargez les fichiers ressources <a href="{resources}/path-follow-tutorial.zip">içi</a>

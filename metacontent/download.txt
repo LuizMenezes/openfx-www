@@ -1,0 +1,30 @@
+{heading:Download}
+<p>
+<b>OpenFX</b> is available in either binary distributions (which are compiled
+versions which only work one one platform), or the source code itself.  If you
+download the source code version, you will not be able to run it out of the box
+unless you have a suitable set of build tools.
+</p>
+
+{heading:Binary Distributions}
+<p><b>OpenFX-2.0</b>, Windows 9x/NT/2000/XP</p>
+<p>The full binary distribution, complete with sample models, animations and textures
+is around 44 megabytes, and available from: </p>
+{ftp:2.0/openfx-2.0.zip}
+
+<p>You can also retrieve a small version that only has the core distribution, without the sample files.  This is available from: </p>
+{ftp:2.0/openfx-2.0-small.zip}
+
+{heading:Source Distributions}
+<p>The source code for OpenFX has been released under the
+<a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public Licence</a>
+and is currently available as a single zip file.</p>
+<p><b>OpenFX-2.0</b>, Source Code</p>
+{ftp:2.0/openfx-2.0-source.zip}
+
+{heading:Thanks}
+<p>Thanks to <a href="mailto:james@unfortu.net">James Cronin</a> from the 
+<a href="http://www.flirble.org/">Flirble Organisation</a>
+for providing bandwidth for us.
+If you can provide a reliable mirror site, please contact 
+<a href="mailto:anil@openfx.org">Anil</a>.</p>

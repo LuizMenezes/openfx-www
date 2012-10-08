@@ -1,0 +1,153 @@
+{heading:Image Post Processor Effects}
+<ul>
+ <li><b>Blur</b>
+ <ul><li>Blurs the screen to simulate Motion Blur.</li></ul>
+ </li>
+
+ <li><b>Depth of Field</b>
+ <ul><li>Simulates photographic depth of field.</li></ul>
+ </li>
+
+ <li><b>Filter</b>
+ <ul><li>Changes the color of all pixels after the rendering is complete.</li></ul>
+ </li>
+ 
+ <li><b>Lens Flare</b>
+ <ul><li>Simulates the effects of lights flaring in the lens of a camera</li></ul>
+ </li>
+ 
+ <li><b>Fog</b>
+ <ul><li>Simulates fog and haze.</li></ul>
+ </li>
+ 
+ <li><b>Glow</b>
+ <ul><li>Adds a glow to any pixels with a key color.</li></ul>
+ </li>
+ 
+ <li><b>Halo</b>
+ <ul><li>Adds a halo around lights.</li></ul>
+ </li>
+ 
+ <li><b>Hilite</b>
+ <ul><li>Adds a hilite for lights.</li></ul>
+ </li>
+ 
+ <li><b>Lasers</b>
+ <ul><li>Simulates the appearance of a laser beam.</li></ul>
+ </li>
+ 
+ <li><b>Starfield</b>
+ <ul><li>Generates a scrolling starfield.</li></ul>
+ </li>
+ 
+ <li><b>Stars</b>
+ <ul><li>Creates the effect of a starfield in an animation.</li></ul>
+ </li>
+ 
+ <li><b>SuperNova</b>
+ <ul><li>Simulates the effect of a star going supernova.</li></ul>
+ </li>
+ 
+ <li><b>Trails</b>
+ <ul><li>Leaves a trail behind for all models that move in a animation.</li></ul>
+ </li>
+ 
+ <li><b>Video</b>
+ <ul><li>Offers 24 different video effects.</li></ul>
+ </li>
+ 
+ <li><b>Xvideo</b>
+ <ul><li>Offers 26 additional different video effects.</li></ul>
+ </li>
+</ul>
+
+<p>
+There are also two special image processors.
+</p>
+<ul>
+ <li><b>Fireballs</b>
+ <ul><li>This plugin XFX image processor adds the capability to generate
+ fractal fireballs and explosions.  This is an animated XFX image processor
+ and its appearance changes over a range of frames.  Therefore, although it
+ can be added as a global effect, it is best used as an Image Effects (F/X)
+ object (Actor).</li></ul>
+ </li>
+
+ <li><b>Atmospherics</b>
+ <ul><li>Allows you to create atmospheric effects such as volumetric lighting,
+ shadowing and fog using a number of configuration options.</li></ul>
+ </li>
+</ul>
+
+{heading:Animation Physical Effects}
+<ul>
+ <li><b>Build Effect</b>
+ <ul><li>Builds a model towards the camera over a range of frames.</li></ul>
+ </li>
+
+ <li><b>Buildto Effect</b>
+ <ul><li>Builds a model face by face from thin air and builds it towards the camera.</li></ul> </li>
+
+ <li><b>Dissolve Effect</b>
+ <ul><li>Makes a model become transparent gradually, until it disappears.</li></ul>
+ </li>
+
+ <li><b>Explode Effect</b>
+ <ul><li>As you might expect, makes a model explode!
+ You can set the center of the detonation, decide whether the pieces should
+ fall under gravity or not, whether they should tumble, and more.</li></ul>
+ </li>
+
+ <li><b>Fall Effect</b>
+ <ul><li>Makes a model fall down under the force of gravity.
+ The bouncing behavior and elasticity are fully adjustable.</li></ul>
+ </li>
+
+ <li><b>Flap Effect</b>
+ <ul><li>A simultaneous combination of the Wave and Modulate effects.</li></ul>
+ </li>
+
+ <li><b>Modulate Effect</b>
+ <ul><li>Passes a wave through the specified axis of the model and
+ moves the vertices radially outward.</li></ul>
+ </li>
+
+ <li><b>Shake Effect</b>
+ <ul><li>Makes the model shake from its bottom to its top.</li></ul>
+ </li>
+
+ <li><b>Spring Effect</b>
+ <ul><li>Makes an actor with a costume compress inward upon
+ itself and then fling off at high speed.</li></ul>
+ </li>
+
+ <li><b>Squash Effect</b>
+ <ul><li>Compresses or expands an actor's costume in a
+ specified direction. Unlike a simple scaling motion, the Squash effect
+ causes the model to bulge outward, like a rubber ball.</li></ul>
+ </li>
+
+ <li><b>Twist Effect</b>
+ <ul><li>Twists or untwists an actor's costume around the
+ specified axis.</li></ul>
+ </li>
+
+ <li><b>Unbuild Effect</b>
+ <ul><li>Takes the model apart face-by-face until nothing remains.</li></ul>
+ </li>
+
+ <li><b>Warp Effect</b>
+ <ul><li>Makes a model warp out of view or into view.</li></ul>
+ </li>
+
+ <li><b>Wave Effect</b>
+ <ul><li>Makes a model undulate under the force of a wave.</li></ul>
+ </li>
+</ul>
+
+{heading:Utility Plugins}
+<p>
+These plugins include operations such as decimation, triangulation and subdivision.
+Documentation for them is not available at the moment, but watch this space!
+</p>
+

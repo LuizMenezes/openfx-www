@@ -1,0 +1,18 @@
+{heading:Image map packages}
+<p>
+Image maps are images that can be placed on to the surface of polygons to add
+detail without increasing the number of polygons or geometry calculations
+that need to be performed.  This is also known as texture mapping.
+</p>
+<p>
+This page contains image map packages - collections of images that you can
+use in your own models and animations to improve the realism of a scene.
+</p>
+
+{heading:Contributing}
+<p>
+If you have an image map (or a set of image maps) that would be useful to others,
+please send them to
+<a href="mailto:dom@openfx.org?subject=Image%20map%20submission">dom@openfx.org</a>.
+</p>
+

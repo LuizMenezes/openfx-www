@@ -1,0 +1,45 @@
+scope:		Modeler en utilisant les opérations booléennes
+title:		Modeler en utilisant les opérations booléennes
+author:		Tutorial écrit par <a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+translator:	Tutoriel traduit par <a href="mailto:bs125525@skynet.be">Jean-luc Songa Butera</a>
+steps:		9
+imagesuffix:	jpg
+
+step1:	<b>1ère étape</b><br /><br />
+	Lancez le Designer et séléctionnez Insert Primitive dans la barre d'outils et
+	créez un objet appelé workpiece.
+step2:	<b>2ème étape</b><br /><br />
+	C'est toujours une bonne idée de colorer chaque pièce pour s'aider ultérieurement
+	au moment de son identification. Pour accéder aux paramètres des matériaux appuyez
+	sur F8 ou allez dans Attributes &gt; materials settings dans la barre de menu.
+	Ensuite déséléctionnez la forme géométrique nouvellement crée en appuyant sur le
+	combo Ctrl+D.
+step3:	<b>3ème étape</b><br /><br />
+	Créez un nouvel objet et déplacez le, en appuyant sur la touche "m" ou en
+	séléctionnant l'outil "move" dans la barre d'outils, de façon à ce qu'il
+	fusionne sur une partie avec l'autre. Ce nouvel objet sera appelé tool pour
+	l'opération booléenne. N'oubliez pas de lui attribuer une couleur dans l'éditeur
+	de matériels. Laissez cet objet séléctionné pour le moment.
+step4:	<b>4ème étape</b><br /><br />
+	Dans le menu Actions séléctionnez Boolean.
+step5:	<b>5ème étape</b><br /><br />
+	Pour une substraction booléenne laisser les paramètres comme ils sont et appuyez
+	sur OK.
+step6:	<b>6ème étape</b><br /><br />
+	Maintenant que l'opération booléenne est terminée vous avez quatre pièces: tool,
+	workpiece et deux morceaux formés par l'intersection des deux objets primaires.
+step7:	<b>7ème étape</b><br /><br />
+	Déséléctionnez tout (Ctrl+D) et ensuite séléctionnez tout les vertexes qui se
+	trouvent à l'intérieur des nouveaux objets booléens. Ceci fait mettez en
+	surbrillance les vertices de ces objets ce qui change leur couleur en jaune.
+	Maintenant effacez cet objet
+step8:	<b>8ème étape</b><br /><br />
+	Ce qui vous reste est l'objet original tool et l'objet workpiece moins la partie
+	enlevée.
+step9:	<b>9ème étape</b><br /><br />
+	Avec les deux objet séléctionnés allez dans le menu Actions et lancez la commande
+	Weld (laissez les paramètres dans l'état dans lequel ils sont). Ceci combinera
+	les deux objets en un seul.
+	<br /><br />
+	Amuse-vous
+

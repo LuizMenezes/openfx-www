@@ -1,0 +1,116 @@
+name:       environ
+smallimg:   environ.jpg
+largeimg:   environ.mpg
+artist:     <a href="http://www.ee.qub.ac.uk/graphics/">Stuart Ferguson</a>
+brief:      Sample movie showing the new cubic environment mapping support available in OpenFX 1.5.  These files are available in the examples from the downloads section.
+
+---
+
+name:       rollingwaves
+smallimg:   rolling-waves.jpg
+largeimg:   rolling-waves.mpg
+artist:     <a href="http://www.ee.qub.ac.uk/graphics/">Stuart Ferguson</a>
+brief:      Sample movie showing the new water deformation plugin available in OpenFX 1.5.  These files are available in the examples from the downloads section.
+
+---
+
+name:       choppy
+smallimg:   choppy.jpg
+largeimg:   choppy.mpg
+artist:     <a href="http://www.ee.qub.ac.uk/graphics/">Stuart Ferguson</a>
+brief:      Sample movie showing the new water deformation plugin available in OpenFX 1.5.  These files are available in the examples from the downloads section.
+
+---
+
+name:		stiffring
+smallimg:	animations-stiffring-sm.jpg
+largeimg:	animations-stiffring.avi
+artist:		<a href="mailto:rodney@qwest.net">Rodney Butrymowicz</a>
+brief:		This is an animation demonstrating the features of a physics simulation
+		package developed by Rodney Butrymowicz.  This is an example of a mass/spring
+		simulation with gravity and a semi-permeable ground.
+info:		These are examples of a mass/spring simulation with gravity and a
+		semi-permeable ground.  I have a couple of quirky utilities to generate a series
+		of frames (one for each frame of the animation) and the necessary ANI file for a
+		morph object.  Obviously several objects can be done seperately and combined in
+		the Animator.  The stellated cube animation is 240 frames and was generated in
+		about 30 seconds, the ring animation is 300 frames and took about 45 minutes to
+		generate. (600 MHz PIII)
+		<br /><br />
+		The utilities I have written allow for many more forces (ElectroMagnetic Fields,
+		Muscles, Drag, ..) and also some simple constraints (a vertex may be allowed to
+		move freely in a plane, but cannot move off of the plane). 
+		<br /><br />
+		The changes/additions I have in mind begin with the ability to edit vertex and
+		edge properties in the Designer module.  This would include Mass, Velocity,
+		spring coeficients, and various other properties (Charge, Lifespan, ...)  Also
+		modifications to the import/export routines for additional chunks in the MFX
+		format. 
+		<br /><br />
+		Plug-Ins would be necessary to provide internal bracing for models, and the
+		ability to turn off automatic face creation when linking exactly two vertices.
+		Perhaps others have ideas for appropriate tools to edit velocity (impart spin) 
+		<br /><br />
+		I will also provide the ring object to show how internal bracing supports the
+		object and how "naked" edges are used to specify velocity.
+
+---
+
+name:		cubebounce
+smallimg:	animations-cubebounce-sm.jpg
+largeimg:	animations-cubebounce.avi
+artist:		<a href="mailto:rodney@qwest.net">Rodney Butrymowicz</a>
+brief:		This is another animation demonstrating the features of a physics simulation
+		package developed by Rodney Butrymowicz.  Again, this shows a mass/spring
+		simulation with gravity and a semi-permeable ground.
+info:		These are examples of a mass/spring simulation with gravity and a
+		semi-permeable ground.  I have a couple of quirky utilities to generate a series
+		of frames (one for each frame of the animation) and the necessary ANI file for a
+		morph object.  Obviously several objects can be done seperately and combined in
+		the Animator.  The stellated cube animation is 240 frames and was generated in
+		about 30 seconds, the ring animation is 300 frames and took about 45 minutes to
+		generate. (600 MHz PIII)
+		<br /><br />
+		The utilities I have written allow for many more forces (ElectroMagnetic Fields,
+		Muscles, Drag, ..) and also some simple constraints (a vertex may be allowed to
+		move freely in a plane, but cannot move off of the plane). 
+		<br /><br />
+		The changes/additions I have in mind begin with the ability to edit vertex and
+		edge properties in the Designer module.  This would include Mass, Velocity,
+		spring coeficients, and various other properties (Charge, Lifespan, ...)  Also
+		modifications to the import/export routines for additional chunks in the MFX
+		format. 
+		<br /><br />
+		Plug-Ins would be necessary to provide internal bracing for models, and the
+		ability to turn off automatic face creation when linking exactly two vertices.
+		Perhaps others have ideas for appropriate tools to edit velocity (impart spin) 
+		<br /><br />
+		I will also provide the ring object to show how internal bracing supports the
+		object and how "naked" edges are used to specify velocity.
+
+---
+
+name:		cafe
+smallimg:	animations-cafe-sm.png
+largeimg:	animations-cafe.avi
+artist:		<a href="mailto:rodney@qwest.net">Rodney Butrymowicz</a>
+brief:		This animation demonstrates 'cloth draping', and effect which acurately
+		models the effect of dropping a flexible material onto a hard surface.
+		This is another very impressive demonstration of Rodney's physical modelling
+		animation system.
+info:		<p>Well, I've been plugging away at my utility - I think I'll call it DynaFX.</p>
+		<p>This is an example of just one effect that can be done with the system -
+		Cloth Draping.</p>
+		<p>
+		STATS:<br />
+		<table cellspacing="6" cellpadding="1" border="0" class="rbody"> 
+		<tr><td>Vertices: </td><td>6346</td></tr> 
+  		<tr><td>Edges: </td><td>19026</td></tr> 
+  		<tr><td>Faces: </td><td>12684</td></tr> 
+		<tr><td>Forces: </td><td>Gravity, Ground, & 5 boxes ( top and 4 legs)</td></tr>
+		<tr><td>Total Time to Generate: </td><td>20 hours</td></tr> 
+  		<tr><td>Time per Frame: </td><td>5 minutes</td></tr> 
+		<tr><td>Animation Length: </td><td>240 frames (7.5 seconds)</td></tr>
+		</table>
+		</p>
+

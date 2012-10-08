@@ -1,0 +1,67 @@
+scope:		Animé la structure d'un squelette
+title:		Animé la structure d'un squelette
+author:		Tutoriel écrit par <a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+translator:	Tutoriel traduit par <a href="mailto:bs125525@skynet.be">Jean-luc Songa Butera</a>
+steps:		10
+imagesuffix:	jpg
+
+step1:		<b>1ère étape</b><br /><br />
+		Créer un tube dans le designer. Ce sera un bras basique auquel sera appliqué un
+		squelette donc modifiez le afin qu'il ressemble à un bras.
+		<br /><br />
+		Pour modeler plus facilement utilisé l'outil de subdivision (Ctr+V) pour ajouter
+		plus de détails au vertices séléctionnées.
+step2:		<b>2ème étape</b><br /><br />
+		Maintenant ajoutons les jointures avec un simple squelette. Le squelette est
+		juste une série de jointures attachées à certaines vertices qui modifieront le
+		mesh quand elles seront déplacées.
+step3:		<b>3ème étape</b><br /><br />
+		Avec rien de séléctionné, appuyez sur Edit &gt; Skeleton &gt; Build joints. Ceci
+		va ouvrir un boîte à outils flottante. Il suffit de passer au dessus de chaque
+		bouton de cette boîte pour en avoir une brève description.
+		<br /><br />
+		Séléctionnez move et cliquez sur la jointure root (la jointure initiale), la petite
+		boîte jaune. Repositionnez là au sommet du mesh du bras.
+		<br /><br />
+		Pensez à root en tant qu'épaule qui, dans cette exercice, n'a pas besoin de bouger.
+step4:		<b>4ème étape<br /><br />
+		Maintenant sléctionez build dans la boîte à outils flottante. Cliquez sur le root
+		et avec le bouton gauche toujours enfoncé, tirez le pointeur jusqu'au milieu du
+		mesh et relâchez le bouton ensuite. une boîte de dialogue va alors s'ouvrir
+		demandant de fournir le nom pour la nouvelle jointure que vous venez de créer.
+		Appelez le coude.
+step5:		<b>5ème étape</b><br /><br />
+		Faites la même chose qu'au dessus mais cliquez sur la jointure du coude et, en
+		maintenant le bouton gauche enfoncé, tirez jusqu'à la fin du mesh. Appelez cette
+		jointure main.
+step6:		<b>6ème étape</b><br /><br />
+		Avec les jointures faient et en place, on peut attacher les jointures séparées
+		aux vertices nécessaires. Fermez le menu de construction des jointures et ouvrez
+		celui de la "Hierarchy Joints". Séléctionnez la jointure coude dans la fenêtre
+		hierarchy. Dans la fenêtre du mesh, séléctionnez les 3 vertices du haut avec
+		l'outil de séléction à la volée. Retournez dans le menu hierarchy et appuyez sur
+		attach. Ceci va assigner les verices séléctionnées à la jointure coude. Vous pouvez
+		à présent déséléctionner ces vertices en appuyant sur deselect.
+step7:		<b>7ème étape</b><br /><br />
+		Faite la même chose pour la kointure main mais cette fois séléctionnez les 2 rangées
+		de vertices (voir image).
+		<br /><br />
+		Sauvez votre bras et passez dans l'animator.
+step8:		<b>8ème étape</b><br /><br />
+		Fixez la longueur de l'animation à 30 frames et chargez le nouvel objet en tant que robot.
+step9:		<b>9ème étape</b><br /><br />
+		Avec le robot chargé, insérez une key frame dans le robot costume timeline à la frame
+		15. Assurez vous que la fenêtre keyframer est ouverte afin que vous puissiez voire la
+		time line (appuyez su "k" pour ouvrir le keyframer). Dans la vue caméra appuyez sur le
+		bouton Go To Frame et entrez 15. Ceci est la nouvelle key frame pour votre bras qui est
+		requise avant que vous puissiez modifier le mesh avec le squelette.
+step10:		<b>10ème étape</b><br /><br />
+		Séléctionnez l'acteur robot en appuyant sur la touche "a" et en cliquant sur robot1.
+		Appuyeez sur "v", ceci va faire apparaître la vue robot. Dans la fenêtre robot hierarchy,
+		séléctionnez la jointure main et faite la tourner autour de l'axe Y, dans n'importe
+		quelle vue cela va créer un keyframe pose pour votre objet.
+		<br /><br />
+		Pour créer l'effect d'un objet se courbant insérez une key frame à  2 sans repositionner
+		les jointures et répétez les étapes 9-10.
+		<br /><br />
+		Les fichiers de l'exemple sont <a href="{resources}/skeleton-tutorial.zip">içi</a>.

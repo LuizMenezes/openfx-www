@@ -1,0 +1,53 @@
+{heading:Resources}
+<p>
+This section will provide many resources for the OpenFX community, such as sample models, animation files,
+tutorials and other tips and tricks.
+</p>
+
+<ul>
+<li><a href="tutorials/index.html"><b>Tutorials</b></a></li>
+<li><a href="plugins/index.html"><b>Plugin libraries</b></a></li>
+<li><a href="shortcuts/index.html"><b>Shortcut references</b></a></li>
+<li><a href="imagemaps/index.html"><b>Image map packages</b></a></li>
+<li><a href="faq.html"><b>Frequently Asked Questions (FAQ)</b></a></li>
+</ul>
+
+{heading:Tutorials}
+<p>
+We now have a new <a href="tutorials/index.html">tutorial section</a>
+that will be filled with step by step instructions for using OpenFX to
+create your blockbuster animation.
+</p>
+<p>
+You can also download them as printer-friendly PDFs below:
+</p>
+<ul>
+<li><a href="docs/ofxmanual-2.0.pdf">OpenFX 2.0 Manual</a> [pdf]</li>
+<li><a href="docs/ofxtutorials-2.0.pdf">OpenFX 2.0 Tutorial</a> [pdf]</li>
+</ul>
+
+{heading:Plugin libraries}
+<p>
+The <a href="plugins/index.html">plugin library repository</a> is now up.
+This contains a list of plugins available which can be installed to enhance
+the feature set of OpenFX.  Note that these are all optional. For a list of
+plugins included in the official OpenFX distribution, please visit the
+<a href="../about-plugins.html">plugins page</a>.
+</p>
+
+{heading:Shortcut references}
+<p>
+A description of the <a href="shortcuts/index.html">shortcut keys</a> available
+in OpenFX has been kick-started by Keith Kelly.  These describe what keys are
+bound to actions in OpenFX and how they are affected by the Shift, Alt and
+Ctrl modifier keys.
+</p>
+
+{heading:Image map packages}
+<p>
+Our <a href="imagemaps/index.html">image map packages</a> contain image maps
+useful for your animations and models.  Image maps are images placed on the
+surface of polygons to add detail without increasing the computation that has
+to be performed when rendering an image.
+</p>
+

@@ -1,0 +1,17 @@
+{heading:OpenFX gallery and screenshots}
+
+<p>
+You can find here a number of screenshots and examples of output
+images rendered using the OpenFX package.  It is split up into 
+sections, to give you a better idea of what each of the individual
+modules in the package do.
+</p>
+ 
+<p>
+If you are proud of any image you've produced using OpenFX, please
+submit it to the <a href="mailto:users@openfx.org">users@openfx.org</a>
+mailing list, and we'll be happy to add it to the gallery.  Do not
+attach the actual images to the mail, but post a web URL where we
+can grab them from.
+</p>
+

@@ -1,0 +1,28 @@
+scope:		Using paths to define actor movement
+title:		Using paths to define actor movement
+author:		Tutorial written by <a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+steps:		8
+imagesuffix:	jpg
+
+step1:	<b>Step 1</b><br /><br />In designer make a path using the pen tool.
+step2:	<b>Step 2</b><br /><br />In the file menu go to Export Model &gt; Path and save the path object
+	as a closed path.
+step3:	<b>Step 3</b><br /><br />Make a object that will move along the path and save it.
+step4:	<b>Step 4</b><br /><br />Now in Animator in the Add actor menu and select path. Click on Filed..
+        and choose the path you make earlier in Designer.
+step5:	<b>Step 5</b><br /><br />In the Add Actor menu select object and choose the follow object you
+	created earlier.
+step6:	<b>Step 6</b><br /><br />Set your animation length Ctrl+L or Frame &gt; Set Animation Length in
+        the menu bar. For this example have 30 frames.  Note for paths to work,
+	your animation must have more than 3 frames.
+step7:	<b>Step 7</b><br /><br />Select the follow object and double click on the position time line for
+	the object at frame 1.  This will open the Movement Timeline for Model1
+	Actor.
+step8:	<b>Step 8</b><br /><br />In the dialog box press select in the follow information box and select
+	the path object. Back in the main dialog box make sure the 'follow' check
+	box is checked, see opposite.
+	<br /><br />
+        That's it. Have fun.
+	<br /><br />
+        Download resource files <a href="{resources}/path-follow-tutorial.zip">here</a>
+

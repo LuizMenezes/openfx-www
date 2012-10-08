@@ -1,0 +1,17 @@
+title:		OpenFX Additions
+author:		<a href="mailto:core@openfx.org">The OpenFX Development Team</a>
+version:	1.0
+modules:	2
+file:		ofx_additions.zip
+install:	Once you have downloaded the package, the two files stlcon.dll and
+		stlout.dll need to be extracted using a tool such as WinZip and placed
+		in the directory that you installed OpenFX to (eg. C:\OpenFX\).
+overview:	This provides model import and export functionality for the Stereo
+		Lithography format (STL).
+
+name1:	stlcon.dll
+info1:	This is the model import library which adds the ability to load Stereo
+	Lithography files for use within OpenFX. 
+name2:	stlout.dll
+info2:	This adds the ability to export models created in the Designer in the STL
+	file format.

@@ -1,0 +1,21 @@
+title:		OpenFX Convex Hull
+author:		<a href="mailto:core@openfx.org">The OpenFX Dev Team</a>
+version:	1.0
+modules:	1
+source:		ofx_convex_hull_src.zip
+file:		ofx_convex_hull.zip
+install:	Once you have downloaded the package, the chull.dll and chull.afx file
+		need to be extracted using a tool such as WinZip and placed
+		in the plugins directory inside the directory that you installed OpenFX
+		(eg. C:\OpenFX\plugins\).   The DLL is the library that executes the
+		action and the AFX files contain the text used in the Plugin Actions
+		submenu of the Actions menu.
+		<br /><br />
+		If you download the source, it should be extracted to the design directory
+		in the openfx source distribution.
+overview:	This implements the convex hull operation from the O'Rourke book as a design
+		action.
+
+name1:	chull.dll
+info1:	This implements the convex hull operation from the O'Rourke book as a design
+	action.

@@ -1,0 +1,246 @@
+<h1><b>Frequently Asked Questions (FAQ)</b></h1>
+<h2><b>Table of Contents</b></h2>
+<ul>
+ <li><a href="#introduction">Introduction</a>
+  <ul>
+    <li><a href="#what">What is OpenFX?</a></li>
+    <li><a href="#track">How do we keep track of changes?</a></li>
+    <li><a href="#license">How is OpenFX licensed?</a></li>
+    <li><a href="#windows">Will it be restricted to the Windows platform?</a></li>
+  </ul>
+ </li>
+ <li><a href="#obtain">Obtaining OpenFX</a>
+  <ul>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#cvsorwincvs">Is it better to use CVS or WinCVS?</a></li>
+    <li><a href="#downloadcvs">Where can I download WinCVS from?</a></li>
+    <li><a href="#downloadssh">Downloading WinSSH-1.2.14</a></li>
+    <li><a href="#setupssh">Setting up the SSH client</a></li>
+    <li><a href="#setupcvscmdline">Setting up CVS for command-line access</a></li>
+    <li><a href="#setupwincvs">Setting up WinCVS</a></li>
+    <li><a href="#checkoutwincvs">Checking out OpenFX using WinCVS</a></li>
+  </ul>
+ </li>
+ <li><a href="#compile">Compiling OpenFX using Visual C++</a></li>
+ <li><a href="#contact">Contact</a></li>
+</ul>
+
+<a name="introduction"></a>
+<h2><b>Introduction</b></h2>
+<p>
+This FAQ describes how to checkout a working copy of OpenFX, and answer any
+common questions that arise.
+</p>
+
+<a name="what"></a>
+<h3>What is OpenFX?<h3>
+<p>
+OpenFX is a suite of advanced 3D modeling, animation and rendering tools.
+It was developed by <a href="mailto:stuart@openfx.org">Stuart Ferguson</a> and
+was initially known as SoftF/X.  He kindly made the decision to Open Source the
+project and it was renamed OpenFX.
+</p>
+
+<a name="track"></a>
+<h3>How do we keep track of changes?</h3>
+<p>
+The method that the OpenFX Development Team uses for revision control is
+a system called CVS, which was developed by Cyclic Software and is available
+free for use by anyone.  If you don't know how CVS works, I highly recommend
+that you read the online version of the CVS Book at
+<a href="http://cvsbook.red-bean.com/cvsbook.html">http://cvsbook.red-bean.com/cvsbook.html</a>.
+It's quite long, but ignore the advanced bits if you want and just learn the
+basics.  In a nutshell however, CVS enables multiple developers to "check out"
+a copy of source code, and commit changes back and receive other developers'
+updates, while resolving any conflicts that may arise in the code.  It also
+supports "branching" code trees, so that a stable and development tree can be
+maintained, for example.
+</p>
+
+<a name="license"></a>
+<h3>How is OpenFX licensed?</h3>
+<p>
+OpenFX uses the GNU General Public License, which is a true Open Source license.
+It means that the code is open and available for anyone to download, but that
+anyone who patches the source-code must make the patch publicly available if they
+wish to profit from the changes.
+</p>
+
+<a name="windows"></a>
+<h3>Will it be restricted to the Windows platform?</h3>
+<p>
+At the moment, it only works under Windows, but we are concentrating development
+efforts to get it running stably under Linux before release.  This is not being
+done by rewriting it, but rather by using the <a href="http://www.winehq.com/">WINE</a>
+package to run the Windows code under Linux.
+</p>
+<p>
+There is a lot of interest within the development team to make OpenFX as cross-platform
+as possible, starting with Windows and Linux.
+</p>
+
+<a name="obtain"></a>
+<h2><b>Obtaining OpenFX</b></h2>
+
+<a name="requirements"></a>
+<h3>Requirements</h3>
+<p>
+<b><i>NOTE: Anonymous access to the OpenFX CVS repository is not yet available.
+It will happen in the near future though, so if you plan on contributing to the
+source tree, this section of the FAQ is for you!</i></b>
+</p>
+
+<a name="cvsorwincvs"></a>
+<h3>Is it better to use CVS or WinCVS?</h3>
+<p>
+CVS is a command-line utility to access a source code repository.  WinCVS is simply an interface
+to CVS.  We have personally found it easier to just use CVS from the command line.  Read on for a
+quick overview on how to set up CVS.  WinCVS has it's quirks, but if you absolutely hate
+command-line tools, then it's your best bet.  Ironically, we've found WinCVS to be more
+difficult to set up and get started with.
+</p>
+
+<a name="downloadcvs"></a>
+<h3>Where can I download WinCVS from?</h3>
+<p>
+You will find the latest version of WinCVS at
+<a href="http://www.wincvs.org/">http://www.wincvs.org</a>.  Before you use it though, you'll
+need to download an SSH client.
+</p>
+
+<a name="downloadssh"></a>
+<h3>Downloading WinSSH-1.2.14</h3>
+<p>
+You will need the Windows port of SSH to securely access the repository.  You can get it
+by FTP at <a href="ftp://ftp.openfx.org/pub/openfx/tools/ssh-1.2.14-win32.zip">ftp://ftp.openfx.org/pub/openfx/tools/ssh-1.2.14-win32.zip</a>.
+Unzip this into a convenient location (<i>e.g. c:\utils\ssh</i>)
+</p>
+
+<a name="setupssh"></a>
+<h3>Setting up the SSH client</h3>
+<ul>
+ <li>Create the directory where you want the OpenFX source to be checked out to.</li>
+ <li>
+  Setup the SSH client.  Since this a straight port of UNIX SSH, it is slightly
+  awkward to setup.  Follow these instructions closely:
+  <ul>
+   <li>Add the location of SSH into your path.</li>
+   <li>Add an environment variable called <b>HOME</b>, which points to the directory
+    where you installed the SSH client.  For example, from a command prompt you might type:
+    <ul>
+     <li>set PATH=%PATH%;c:\utils\ssh</li>
+     <li>set HOME=c:\utils\ssh</li>
+    </ul>
+   </li>
+   <li>If you are using <b>Windows 9x</b>, add these lines (with the correct paths inserted) to your
+    AUTOEXEC.BAT file.</li>
+   <li>If you are using <b>Windows 2000</b>, to save these for all future sessions do the following:
+    <ul>
+     <li>Right click on "My Computer" and select "Properties".</li>
+     <li>Click on the "Advanced" tab.</li>
+     <li>Click on the "Environment Variables..." button.</li>
+     <li>In the top half of the window, click on "New...".</li>
+     <li>Enter <b>HOME</b> for the variable name and the path to the SSH client as the variable value
+      and click on OK.</li>
+     <li>You should already have a <b>PATH</b> variable defined (no need to create a new one).  Append
+      the SSH client path (same as for the <b>HOME</b> variable) to your current path.</li>
+    </ul>
+   </li>
+   <li><b>Windows 9x</b> users may have to reboot at this point, to make sure that the environment
+    changes come into effect.</li>
+  </ul>
+ </li>
+ <li>Check that the SSH client works by typing "<b>ssh -l username openfx.org</b>" (without the quotes)
+  at a command prompt.  Make sure that you replace "username" with your own one.  You should be prompted
+  for a password at this stage.  If not, then you've done something wrong so go back to step 1!</li>
+</ul>
+
+<a name="setupcvscmdline"></a>
+<h3>Setting up CVS for command-line access</h3>
+<p>
+To use CVS from the command line, follow these steps:
+</p>
+<ul>
+ <li>Create an environment variable called <b>CVSROOT</b> and set its value to
+  <ul><li><b>:ext:username@openfx.org:/home/cvs/openfx</b></li></ul>
+  Follow the instructions given above if you don't know how to do this.  Make sure
+  you replace "username" with your own one.
+ </li>
+ <li>Create an environment variable called <b>CVS_RSH</b> and set its value to
+  <ul><li><b>ssh</b></li></ul>
+  This tells CVS to use your SSH client to connect to the repository.
+ </li>
+</ul>
+<p>
+If you want to test all of this out, try running the command <b>cvs -n update</b>
+from the command line.  You should be prompted for a password.  If not, your
+SSH client is not set up correctly.  The -n option tells CVS not to modify
+your disk or merge files in any way.  For debugging purposes, you can try using
+it in conjunciton with the -t option which enables tracing of the program execution.
+</p>
+<p>
+If everything appears to work correctly, then you're ready to download a copy
+of the remote repository to your local disk.  You can do this by typing
+<b>cvs update</b> from the command line.  This operation may take a little while
+to complete when run for the time, but from here on CVS will only attempt to
+sync your code with that of the remote repository.
+</p>
+
+<a name="setupwincvs"></a>
+<h3>Setting up WinCVS</h3>
+<ul>
+ <li>Start WinCVS.</li>
+ <li>Select the Admin menu, and go to Preferences.</li>
+ <li>In the General tab, enter your CVSROOT as:
+  <ul>
+   <li><b>username@openfx.org:/home/cvs/openfx</b></li>
+  </ul>
+ </li>
+ <li>Authentication should be "<b>SSH Server</b>".</li>
+ <li>CVS version should be <b>CVS 1.10</b></li>
+ <li>In the Ports tab, check the "check for alternate rsh name" box,
+   and enter '<b>ssh</b>' as the alternative.</li>
+ <li>In the WinCVS tab, change the HOME folder to the one you created to store OpenFX in.</li>
+</ul>
+
+<a name="checkoutwincvs"></a>
+<h3>Checking out OpenFX using WinCVS</h3>
+<p>
+To obtain a copy of the source, you can use WinCVS to checkout the latest copy
+from the CVS tree.  Once you get used to CVS, you can also use it to obtain different
+branches and tags, such as old copies, or beta development copies.
+</p>
+<ul>
+ <li>In the views, select the "explore" tab instead of the modules tag.</li>
+ <li>Choose the directory you want to check out OpenFX to.</li>
+ <li>Go to the Create module, and chose "Checkout module to selection".
+  If it's greyed out, you haven't selected a valid directory, so chose one
+  in the explore tab and try again.</li>
+ <li>For the module name, enter "<b>src</b>" and click OK.</li>
+</ul>
+<p>
+At this point, if all has gone well, a command-prompt window will pop up.  Enter your
+password in there, and the copy of OpenFX will be checked out!  If you get any
+error messages, then you probably haven't set something up correctly (doh),
+so go back and make sure that SSH is working, environment variables are correct, etc.
+</p>
+
+<a name="compile"></a>
+<h2><b>Compiling OpenFX using Visual C++</b></h2>
+<p>
+Compiling is done using the Visual C++ command-line tools.  You'll need to set up
+some environment variables first.  Make sure that the PATH variable includes your VC binary path,
+the LIB variable points to the VC libraries and the INCLUDE variable points to the VC include files.
+</p>
+<p>
+To compile OpenFX, simply run MakeAll.BAT from the command line.  This batch file does most
+of the work for you by compiling OpenFX and all of its utilities for the x86 CPU family (Intel).
+</p>
+
+<a name="contact"></a>
+<h2><b>Contacting us</b></h2>
+<p>
+Should you have any questions (and you should!), your first port of call should be the
+user and dev <a href="{url:mail.html}">mailing lists</a>. You can also e-mail the
+core development team at <a href="mailto:core@openfx.org">core@openfx.org</a>.
+</p>

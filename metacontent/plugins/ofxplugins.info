@@ -1,0 +1,33 @@
+title:		OpenFX Plugins
+author:		<a href="mailto:core@openfx.org">The OpenFX Development Team</a>
+version:	1.0
+modules:	6
+file:		ofx_plugins.zip
+install:	Once you have downloaded the package, the .dll and .afx files
+		need to be extracted using a tool such as WinZip and placed
+		in the plugins directory inside the directory that you installed OpenFX
+		(eg. C:\OpenFX\plugins\).   The DLLs are the libraries that execute the
+		actions and the AFX files contain the text used in the Plugin Actions
+		submenu of the Actions menu.
+overview:	OfxPlugins provides the missing designer module actions.  This includes
+		support for shrink wrapping and building objects from implicit mathematical
+		functions.
+
+name1:	blobby.dll (known as shrink wrap)
+info1:	This does blobby modelling around basic OFX shapes like points lines or faces.
+name2:	decimate.dll
+info2:	Cuts out a large number of faces edges and vertices making the model smaller, it is
+	much better than the other build in the &quot;Simplify&quot; action but is less forgiving.
+name3:	implicit.dll
+info3:	Makes a shape based on an implicit function - not very useful just a torus for now, the
+	source code is more useful as a guide for people writing plugins (the source was included
+	with the original OpenFX source).
+name4:	isosurf.dll
+info4:	This plots surface contours for a function in the Visualisation Toolkit format. You will
+	need access to the VTK to use this.
+name5:	quadric.dll
+info5:	This generates shaps based on a quadric equation, and you can change the equation to build
+	some mathematical shapes.
+name6:	shrink.dll
+info6:	This breaks up the model into individual faces and reduces their size. Try it on the 3Frame
+	model to see its effect.  Might be useful for generating explosions.

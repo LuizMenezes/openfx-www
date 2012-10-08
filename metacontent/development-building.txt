@@ -1,0 +1,17 @@
+{heading:Building OpenFX}
+<p>
+The first step is to <a href="{url:download.html}">get the source</a>.
+To compile OpenFX, you will need to have the Microsoft Visual C compiler installed and at
+least 200Mb free disk space.  Extract the source to your working directory using an unzip
+utility such as <a href="http://www.winzip.com/">WinZip</a>.  Make sure you have the setup
+Visual C to to allow you to run the compiler from the command line.  Change to your working
+directory and run the 'makeall.bat' script.  OpenFX should start compiling.  When this has
+finished (it may take a few minutes) you should be able to run the openfx.exe from that
+directory. 
+</p>
+
+<p>
+If you have any problems building OpenFX, please ask for assistance on our
+<a href="{url:mail.html}">users mailing list</a>.
+</p>
+

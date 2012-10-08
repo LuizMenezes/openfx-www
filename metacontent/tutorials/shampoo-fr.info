@@ -1,0 +1,89 @@
+scope:		Le mapping de texture et l'outil d'extrusion circulaire
+title:		Le mapping de texture et l'outil d'extrusion circulaire
+author:		Tutoriel écrit par <a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+translator:	Tutoriel traduit par <a href="mailto:bs125525@skynet.be">Jean-luc Songa Butera</a>
+steps:		9
+imagesuffix:	jpg
+preview:	step-9-sm.jpg
+
+step1:		<b>1ère étape</b><br /><br />
+		Utilisez l'outil pen pour créer les trois composantes principale de la bouteille: le
+		couvercle, le corps et le liquide. Pour vous faciliter la tâche plus tard, il est est
+		préférable de construire les profils selon l'axe Z (voir opposé).
+		<br /><br />
+		Essayez de laisser un petit espace entre les composants de façon qu'aucune forme ne
+		croise une autre. Cela améliorera l'ensemble une fois rendu.
+step2:		<b>2ère étape</b><br /><br />
+		En séléctionnant chaque profile appliquer l'outil d'extrusion circulaire (lathe) ou
+		"tour de potier" avec les paramètres de 14 segments et 360 degrés. Tout en extrudant
+		n'oubliez pas d'attribuer un matériel à chaque objet obtenu dans le menu Attributes
+		ou en pressant F8.  Les paramètres sont
+		<a href="{resources}/lid-texture-attributes.jpg">COUVERCLE</a>,
+		<a href="{resources}/bottle-texture-attributes.jpg">CORPS</a> et
+		<a href="{resources}/outer-liquid-surface-attributes.jpg">LIQUIDE</a>.
+		Utilisez un index de réfraction de 1.50 (verre) pour la texture corps et 1.333 (eau)
+		pour le liquide.
+		<br /><br />
+		Souvenez-vous: Pour rendre une surface réfléchissante activez les options de tracé des
+		ombres et des réfléxions.
+hint2:		Astuce: Pour extruder circulairement précisemment à partir du centre, ouvrez dans le
+		menu View la boîte de dialogue Display Coordinates. Cliquez n'importe où dans la vue
+		de haut et remplaçez les valeurs de X, Y et Z dans la boîte Dispay Coordinates par
+		0, 0, 0. Ensuite il suffit de faire Actions &gt; Lathe ou le combo Ctrl+L.
+step3:		<b>3ème étape</b><br /><br />
+		Maintenant nous devons séléctionner les faces qui vont reçevoir le mapping décalé de
+		l'étiquette.  En utilisant l'outil de séléction de la barre d'outils, maintenez enfonçé
+		la touche shift et séléctionnez les 5 vertices de devant en haut et en bas sur le corps
+		de la bouteille. Après les avoir séléctionnés allez dans Attributes &gt; materials settings
+		et ouvrez la table de mapping. La choisissez Set et choisissez &lt;new&gt;. corrigez le menu
+		pour qu'il ressemble à <a href="{resources}/applying-map-to-bottle.jpg">cet exemple</a>.
+hint3:		Astuce: Séléctionnez les verices nécessaire est très simple, souvenez seulement que quand
+		vous voulez zoomer sur un point précis il doit être visible dans les trois fenêtres de vue
+		avant que vous puissiez le séléctionner.
+step4:		<b>4ème étape</b><br /><br />
+		Certaines parties de l'étiquette ne sont pas nécessaire. ces sections peuvent être rendues
+		transparentes en disant à OpenFX quelles sont les couleurs qui ne sont pas nécessaires dans
+		la section Decal Colour de la boîte de dialogue Image Map Settings. Dans cette boîte de
+		dialogue vous devez aussi séléctionner l'étiquette qui sera appliquée à la surface en tant
+		qu'image fixe.
+step5:		<b>5ème étape</b><br /><br />
+		Toujours dans la boîte de dialogue Image Map Settings, appuyez sur le bouton Move. Un petit
+		menu flottant va apparaître, dans la vue de dérrière cliquez sur le vertexe en haut à droite
+		de la zone dans laquelle l'image ira et appuyez sur le bouton T/L, ensuite cliquez sur le
+		vertexe en haut à droite et cliquez sur T/R, cliquez sur le vertexe d'en bas à gauche et
+		cliquez sur B/L et finalement appuyez sur Done. Le map decal est maintenant en position.
+		<br /><br />
+		Sauvez ce fichier en tant que bouteille.
+step6:		<b>6ème étape</b><br /><br />
+		A partir du fichier original nous allons en produire deux. Un pour la bouteille et le
+		couvercle et l'autre pour le liquide. Copier le fichier original et ouvrez le. Effacez
+		les objets couvercle et la bouteille et séléctionnez le liquide. dans le menu Actions
+		sélé ctionnez Duplicate et cliquez sur Ok. A présent nous avons une copy de l'objet
+		liquide. Double cliquez sur l'icône Scale et reduisez l'objet sur tout ses axes
+		jusuq'à .99. Cliquez sur Scale vertices et mettez les à l'échelle depuis le centre.
+		Maintenant inversez les normales en utilisant Actions &gt; Reverse et changez les
+		matériaux en ceux de
+		<a href="{resources}/inner-liquid-surface-attributes.jpg">cet exemple</a>.
+		Sauvez ce fichier en tant que liquide. Ouvrez le fichier original, effacez le liquide
+		et sauvez le fichier en tant que bouteille.
+step7:		<b>7ème étape</b><br /><br />
+		Créez un nouveau fichier pour l'objet en arrière plan nn utilisant un seul polygone
+		extrudé et en lui assignant le plug-in de surface Plate en tant que texture. Réglez
+		l'échelle pour X, Y, Z à 3.0, ne séléctionnez pas l'option Dirty plate et placez Colour
+		variation à 0.0. Sauvez ceci en tant que mur.
+step8:		<b>8ème étape</b><br /><br />
+		Dans l'animateur, chargez les modèles de la bouteille et du liquide.  Si ils apparaissent
+		à différentes places séléctionnez les, l'un après l'autre, et double-cluqez sur l'icône
+		Move et réglez les paramètres de X, Y, Z à  0, 0, 0. Chargez l'objet Mur et positionnez
+		le à l'opposer. Cette scène a été éclairée avec un spot pour les surfaces réfléchissantes
+		et une lumière générale omni. Il y a aussi un objet Ground qui forme le sol et un objet
+		ciel, réglé sur degradé de bleu pâle/jaune clair.
+		<br /><br />
+		Jouez avec l'éclairage et le ciel afin d'avoir le meilleur équilibre entre la couleur
+		et les ombres.
+step9:		<b>9ème étape</b><br /><br />
+		Render la scène en activant les options trace reflection, trace shadows et trace glass.
+		Soyez prévenu: ceci va prendre beaucoup de temps donc allez vous préparez une tasse de
+		thé et vous reposez.
+		<br /><br />
+		Téléchargez les fichiers ressources <a href="{resources}/tutorial.zip">içi</a>.

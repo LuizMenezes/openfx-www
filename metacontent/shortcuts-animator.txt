@@ -1,0 +1,80 @@
+<center>
+<h1>Shortcuts for Animator</h1>
+<p><strong>Contributed By <a href="mailto:keith.kelly@zail.freeservers.com">Keith Kelly</a></strong></p>
+<br /><br />
+
+<table width="90%" cellpadding="2">
+<tr>
+ <th align="left" colspan="2">Function Keys</th>
+ <th align="left" colspan="2">Single Letter Shortcuts</th>
+</tr>
+<tr><td>F1</td><td>Bring up the help menu for the current program</td><td>A</td><td>Select Actor</td></tr>
+<tr><td>F2</td><td>Snap cursor to Actor</td><td>C</td><td>Activate Camera</td></tr>
+<tr><td>F3</td><td>Snap cursor to Cursor</td><td>E</td><td>Special Effect</td></tr>
+<tr><td>F4</td><td>Reset Quad view windows; Shift-F4 for Single View</td><td>F</td><td>Camera Field of View</td></tr>
+<tr><td>F5</td><td>Global Quickdraw</td><td>G</td><td>Show Grid</td></tr>
+<tr><td>F6</td><td>Draw Full</td><td>I</td><td>Image Process all Frames</td></tr>
+<tr><td>F7</td><td></td><td>K</td><td>Show keyframer</td></tr>
+<tr><td>F8</td><td>Info on Actor</td><td>L</td><td>Spotlight Cone</td></tr>
+<tr><td>F9</td><td>Crosswire/Crosshair Cursor Toggle</td><td>M</td><td>Move</td></tr>
+<tr><td>F10</td><td>Edit Model</td><td>P</td><td>Pan</td></tr>
+<tr><td>F11</td><td>Hide OpenGL Camera View</td><td>R</td><td>Rotate</td></tr>
+<tr><td>F12</td><td>Quick Render</td><td>S</td><td>Scale</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>T</td><td>Spline Tween Mode</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>V</td><td>Vertex Selector</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>W</td><td>Wireframe Preview</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>Y</td><td>Path Velocity</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>Z</td><td>Zoom</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>[</td><td>Goto First Frame</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>]</td><td>Goto Last Frame</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td><</td><td>Previous Frame</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>></td><td>Next Frame</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>+</td><td>Zoom In</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>-</td><td>Zoom Out</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp</td><td>Del</td><td>Delete</td></tr>
+</table>
+<br />
+
+<h2>Hotkeys</h2>
+
+<table width="90%" cellpadding="2">
+<tr><td>Ctrl+A</td><td>Insert Actor</td><td>Ctrl+N</td><td>New Animation</td><td>Ctrl+T</td><td>Open Template</td></tr>
+<tr><td>Ctrl+D</td><td>Designer</td><td>Ctrl+O</td><td>Open Animation</td><td>Ctrl+W</td><td>Viewer</td></tr>
+<tr><td>Ctrl+F</td><td>Goto Frame...</td><td>Ctrl+P</td><td>Print</td><td>Ctrl+Y</td><td>Flic Player</td></tr>
+<tr><td>Ctrl+G</td><td>Snap to Grid</td><td>Ctrl+Q</td><td>Quit</td><td>Ctrl+Z</td><td>Undo</td></tr>
+<tr><td>Ctrl+K</td><td>Dock Keyframer</td><td>Ctrl+R</td><td>Repeat last Render</td><td>Shift+F4</td><td>Single View</td></tr>
+<tr><td>Ctrl+L</td><td>Animation Length...</td><td>Ctrl+S</td><td>Save</td><td>Shift+F11</td><td>Refresh OpenGL Camera View</td></tr>
+</table>
+
+<h2>Tools Related Shortcuts</h2>
+</center>
+
+<p>
+Actor Selector - Right clicking the mouse will start the Actor Selector. 
+</p>
+
+<p>
+Pan - Double clicking on Pan will center the View on the point that it was at before the last Pan or Zoom operation. 
+</p>
+
+<p>
+Zoom - Double clicking on Zoom will Make the animation zoom to fit the views. 
+</p>
+
+<p>
+Move - Double clicking on Move will make a pop-up menu that will allow movements of specific amounts. 
+</p>
+
+<p>
+Rotate - Double clicking rotate will make a pop-up menu that will allow rotations of specific amounts.
+Direction rotates normal to the Z-Axis. Elevation rotates normal to the X-Axis. Pitch rotates normal to
+the Y-Axis. 
+</p>
+
+<p>
+Scale - Double clicking Scale will make a pop-up menu that will allow scales of specific amounts. 
+</p>
+
+<p>
+Render - Ctrl-R does a Render with all the currently selected options. 
+</p>

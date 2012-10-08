@@ -1,0 +1,26 @@
+title:		Metaspline (metashape modelling)
+author:		<a href="mailto:rodney@qwest.net">Rodney Butrymowicz</a>
+version:	1.0
+modules:	1
+source:		metaspline_src.zip
+file:		metaspline.zip
+install:	Once you have downloaded the package, the metaspline.dll and metaspling.afx
+		files need to be extracted using a tool such as WinZip and placed
+		in the plugins directory inside the directory that you installed OpenFX
+		(eg. C:\OpenFX\plugins\).   The DLL is the library that executes the
+		action and the AFX files contain the text used in the Plugin Actions
+		submenu of the Actions menu.
+		<br /><br />
+		If you download the source, it should be extracted to the design directory
+		in the openfx source distribution.
+		<br /><br />
+		The packages also contain a
+		<a href="metaspline.html">documentation file</a>
+		explaining how to use this plugin and some example model files to demonstrate it.
+overview:	This plugin is an implementation of metashape modelling, also known as
+		'blobs' or 'metaballs'.  This currently supports two types of metashape -
+		metaballs and metasplines.  MetaSplines are exactly like POVRAY Cylindrical
+		Blobs except that each end can have it's own Strength and Radius properties.
+
+name1:	metaspline.dll
+info1:	This implements a metashape modelling plugin.

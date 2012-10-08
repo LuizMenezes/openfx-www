@@ -1,0 +1,46 @@
+name:		Metaspline
+directory:	metaspline
+type:		Design
+author:		<a href="mailto:rodney@qwest.net">Rodney Butrymowicz</a>
+source:		yes
+info:		This is a metashape modelling plugin.
+
+---
+
+name:		Trisect
+directory:	trisect
+type:		Design
+author:		<a href="mailto:rodney@qwest.net">Rodney Butrymowicz</a>
+source:		yes
+info:		This is a smooth subdivide plugin.
+
+---
+
+name:		OpenFX Plugins
+directory:	ofxplugins
+type:		Design
+author:		<a href="mailto:core@openfx.org">OpenFX Dev Team</a>
+source:		no
+info:		This provides support for the plugin actions in the designer modules.  Install
+		this module if you are getting 'Failed Library' messages from the designer.
+
+---
+
+name:		Convex Hull
+directory:	ofxconvexhull
+type:		Design
+author:		<a href="mailto:core@openfx.org">OpenFX Dev Team</a>
+source:		yes
+info:		This implements the convex hull operation from the O'Rourke book as a design
+		action.
+
+---
+
+name:		OpenFX Additions
+directory:	ofxadditions
+type:		Import / Export
+author:		<a href="mailto:core@openfx.org">OpenFX Dev Team</a>
+source:		no
+info:		This provides model import and export functionality for the Stereo
+		Lithography format (STL).
+

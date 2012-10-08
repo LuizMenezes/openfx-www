@@ -1,0 +1,6 @@
+name:		1
+smallimg:	renderer-1-sm.png
+largeimg:	renderer-1.png
+brief:		The dialog box shows one of the renderer tabs.  Here you can configure
+		up the basic options such as output format, resolution, and quality.
+		The other tabs control more advanced options such as the raytracer.

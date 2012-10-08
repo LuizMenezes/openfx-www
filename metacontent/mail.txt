@@ -1,0 +1,36 @@
+{heading:Mailing Lists}
+<p>
+The primary method for communicating between developers is via mailing-lists,
+which are associated with a particular topic of interest. When choosing which
+ones to subscribe to, please read the purpose of that list carefully, and do
+not post to the wrong one.</p>
+<p>
+To subscribe to the list, simply send a blank e-mail to
+<b><i>listname</i>-subscribe@openfx.org</b> and follow the instructions
+that will be sent to you.  Daily digests of the lists are also available, if you
+send a blank e-mail to <b><i>listname</i>-digest-subscribe@openfx.org</b>.
+</p>
+<ul>
+ <li><b><a href="mailto:users-subscribe@openfx.org">users@openfx.org</a></b>
+ <ul><li>
+ The general purpose list for end-users of <b>OpenFX</b>.  If you have queries
+ about how it works, or want to inform fellow users of tips and tricks, then
+ post away to this list!
+ </li></ul></li>
+ <li>
+ <b><a href="mailto:dev-subscribe@openfx.org">dev@openfx.org</a></b>
+ <ul><li>
+ If you are interested in contributing new code or plugins to the project,
+ then you should subscribe to this list.  Patches may be posted here, as 
+ well as links or pointers to your own code.  This list should <b>not</b>
+ be used for end-user queries, but instead for more technical discussion.
+ </li></ul></li>
+ <li>
+ <b><a href="mailto:cvs-subscribe@openfx.org">cvs@openfx.org</a></b>
+ <ul><li>
+ OpenFX uses the <a href="http://www.cvshome.org/">CVS</a> system to track
+ source changes.  This list pushes out a list of code changes as they happen.
+ You only need track this list if you are interested in the details of code
+ changes as they happen.</li></ul></li>
+</ul>
+

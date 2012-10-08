@@ -1,0 +1,120 @@
+
+a {
+	text-decoration: none;
+	color: #222288;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	margin: 0.8em 0 1em 0;
+}
+
+body {
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 12pt;
+	background-color: #ffffff;
+	color: #222222;
+	margin: 0pt 3pt 3pt 3pt;
+}
+
+.barleft {
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #aa8800;
+	color: #ffffff;
+	text-align: left;
+	padding: 1px;
+}
+
+.barright {
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #666666;
+	color: #ffffff;
+	text-align: left;
+	padding: 1px;
+}
+
+.logo {
+	background-color: #dddddd;
+}
+
+.content {
+	background-color: #dddddd;
+	padding: 0px 6px 2px;
+}
+
+.newsitem {
+	background-color: #aaaabb;
+	vertical-align: top;
+}
+
+.menu1 {
+	font-family: Geneva, Helvetica, sans-serif;
+	background-color: #c0c0cc;
+	font-size: 10pt;
+	color: #222222;
+}
+
+.menu1rt {
+	font-family: Geneva, Helvetica, sans-serif;
+	background-color: #cccccc;
+	text-align: center;
+	font-size: 8pt;
+}
+
+.menu2 {
+	font-family: Geneva, Helvetica, sans-serif;
+	background-color: #dddddd;
+	font-size: 10pt;
+}
+
+.menu2rt {
+	font-family: Geneva, Helvetica, sans-serif;
+	background-color: #cccccc;
+	text-align: center;
+	font-size: 8pt;
+}
+
+.recent {
+	color: #996600;
+	font-size: 8pt;
+}
+
+.newshead {
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.newsname {
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.newsbody {
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.rbody {
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.rhead {
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	margin: 1.2em 0em 0.5em;
+}
+
+.tidx-cell {
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 10pt;
+	vertical-align: top;
+}
+
+

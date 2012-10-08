@@ -1,0 +1,84 @@
+scope:		Texture mapping and the lathe tool
+title:		Texture mapping and the lathe tool
+author:		Tutorial written by <a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+steps:		9
+imagesuffix:	jpg
+preview:	step-9-sm.jpg
+
+step1:	<b>Step 1</b><br /><br />
+	Using the pen tool create the three main components of the bottle: Lid, Body and Liquid.
+	To help later on its better to construct the profiles about the Z axes (see opposite). 
+	<br /><br />
+	Try to leave a small gap between all the components so no geometry is intersection any
+	other component, it will look better when finally rendering.
+step2:	<b>Step 2</b><br /><br />
+	Selecting each profile separately apply the Lathe tool with a setting of
+	14 segments and 360 degrees. As you lathe each profile assign a material
+	in the Attributes menu or press F8. The setting are:
+	<a href="{resources}/lid-texture-attributes.jpg">LID</a>,
+	<a href="{resources}/bottle-texture-attributes.jpg">BODY</a>, and
+	<a href="{resources}/outer-liquid-surface-attributes.jpg">LIQUID</a>.
+	Use a refraction index setting of 1.50 (glass) for the body texture and
+	1.333 (water) for the liquid.
+	<br /><br />
+	Remember: when rendering a refraction surface turn on trace shadows and
+	trace reflections.
+hint2:	Hint: To Lathe accurately about the center, open the Display Co-ordinates dialog box in
+	the view menu. Click anywhere in the top view and change X, Y, Z in the
+	Display Co-ordinates box to 0,0,0. Then Actions &gt; Lathe or Ctrl+L.
+step3:	<b>Step 3</b><br /><br />
+	Now to select the faces that will have a Decal mapping applied to them,
+	for the label. Using the selector tool from the tool bar hold down shift
+	and lasso the front 5 vertices top and bottom. With these selected go
+	into Attributes &gt; materials settings and open the maps tab. Here
+	select set and choose &lt;new&gt;. Amend the menu to look like
+	<a href="{resources}/applying-map-to-bottle.jpg">this example</a>.
+hint3:	Hint: Selecting the required vertices couldn't be easier, just remember what
+	ever you want to zoom in on must me visible in all three view ports
+	before you can select it.
+step4:	<b>Step 4</b><br /><br />
+	Some sections of the label image are not required these sections can be
+	made transparent by telling OpenFX which colour isn't required in the
+	Decal Colour section of the Image Map Settings dialog box. In this
+	dialog box we must also select the label which is to be applied to the
+	surface as a still image.
+step5:	<b>Step 5</b><br /><br />
+	Still in the Image Map Setting dialog box, press the move button. A
+	small floating menu will appear, in the rear view window click on the
+	top left hand vertex were the map will go and press the T/L button then
+	click on the top right vertex and press T/R click on the bottom
+	left vertex and press B/L and finally press Done. The Decal is now
+	positioned.
+	<br /><br />
+	Save the file as bottle.
+step6:	<b>Step 6</b><br /><br />
+	From the original file we'll produce two. One for the bottle and lid and
+	the other for the liquid. Copy the original file and open it, delete the
+	lid and bottle objects and select the liquid. In the Actions menu select
+	Duplicate, click ok. Now we have a copy of the liquid object. Double
+	click on the scale icon and reduce it in all axis to .99 click on scale
+	vertices and scale from center. Now flip the normals using Actions &gt;
+	Reverse and change the material to
+	<a href="{resources}/inner-liquid-surface-attributes.jpg">this example.</a>
+	Save this file as liquid. Open the original file, delete the liquid and
+	save the file as bottle.
+step7:	<b>Step 7</b><br /><br />
+	Create a new file for the backdrop object .Using a single extruded
+	polygon and assign the plate plugin as a texture. Set the Scale for X,
+	Y, Z to 3.0, don't select dirty plate and have colour variation as 0.0.
+	Save this as wall.
+step8:	<b>Step 8</b><br /><br />
+	In animator load the bottle and liquid model. If they appear in
+	different places select one at a time, double click the move icon and
+	set the X, Y, Z to 0,0,0. Load the wall object and position as opposite.
+	This scene has been light with a spot light for the refraction surfaces
+	and a general omni light. A ground object forms the floor and a sky
+	object set to gradient of pale blue / light yellow.
+	<br /><br />
+	Play with the lighting and sky to get the best balance of colour and shadows.
+step9:	<b>Step 9</b><br /><br />
+	Render the scene with trace reflection and trace shadows and trace glass on. Be
+	warned this does take a long time, so go make yourself a cup of tea and
+	sit back.
+	<br /><br />
+	Download resource files <a href="{resources}/tutorial.zip">here</a>.

@@ -1,0 +1,22 @@
+{heading:Plugins}
+<p>
+This page contains a list of plugins which can enhance the functionality
+of OpenFX.  These are binary files containing code that will be used by
+OpenFX to perform tasks such as image preprocessing and model animation
+effects.  The plugin libraries on this page are optional - they are not
+needed to run OpenFX.  For a list of the plugins included in the official
+OpenFX distribution, please see our
+<a href="{url:about-plugins.html}">Plugin section</a>.
+</p>
+
+{heading:Contributing}
+<p>
+Plugins can be written by anyone with a C compiler and a working knowledge
+of C and OpenFX.  Tutorials of how to write a plugin will soon be available
+at our <a href="{url:development/index.html">Development page</a>.  If you have
+written a plugin and would like it to be included on this page (or even in
+the official OpenFX distribution), please mail
+<a href="mailto:dom@openfx.org?subject=Plugin%20submission">dom@openfx.org</a>
+with the plugin libraries and a description of what each module does. 
+</p>
+

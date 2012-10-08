@@ -1,0 +1,47 @@
+name:		Boolean
+directory:	boolean
+package:	Designer
+description:	This is a tutorial aimed at beginners to OpenFX and 3D modelling in general.
+		It explains how to cut one object out using the boolean action in the OpenFX
+		designer.
+author:		<a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+
+---
+
+name:		Simple Skeleton
+directory:	simpleskeleton
+package:	Designer
+description:	This tutorial is for beginners who want to make a model that can be posed easily
+		using the skeletal structure. <br /><b>Updated:</b> Revised version available
+		(02.03.2001)
+author:		<a href="mailto:keith.kelly@zail.freeservers.com">Keith Kelly</a>
+support:	quicktank.mfx
+
+---
+
+name:		Shampoo Bottle
+directory:	shampoo
+package:	Designer
+description:	This demonstrates the use of the Lathe tool in the designer and texture mapping.
+		It also shows how to use the animator to create a simple static scene.
+author:		<a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+support:	tutorial.zip
+
+---
+
+name:		Path Follow
+directory:	pathfollow
+package:	Animator
+description:	This shows how to setup an actor to move round a path in the Animator.
+author:		<a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+support:	path-follow-tutorial.zip
+
+---
+
+name:		Arm Skeleton
+directory:	armskeleton
+package:	Animator
+description:	This shows how to create a skeletal arm structure and animate it.
+author:		<a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+support:	skeleton-tutorial.zip
+

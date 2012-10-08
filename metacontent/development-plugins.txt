@@ -1,0 +1,15 @@
+{heading:Developing plugins for OpenFX}
+<p>
+OpenFX supports plugins which allow users to enhance the feature set by installing
+small code modules.  There are currently plugins for programmatic textures, model effects
+(such as model deformations), image postprocessing (eg. volumetric effects and image
+blurring) and others.
+</p>
+
+<p>
+Eventually, there will be documentation for developing plugins for OpenFX here.
+For now, though, your best bet for documentation is to look at the source files in each
+of the effects/, postprocess/, presets/ and textures/ directories.  There
+should also be a readme.txt file in those directories with a brief discussion of how
+to write a plugin.
+</p>

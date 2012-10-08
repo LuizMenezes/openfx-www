@@ -1,0 +1,45 @@
+scope:		Model using the boolean function
+title:		Model using the boolean function
+author:		Tutorial written by <a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+steps:		9
+imagesuffix:	jpg
+
+step1:  <b>Step 1</b><br /><br />
+	Start Designer select 'Insert Primitive' from the tool bar and create an object.
+step2:  <b>Step 2</b><br /><br />
+	It's always a good idea to colour each piece of geometry to help with
+        identifying it later. To access the materials attributes press F8 or
+        go to attributes &gt; materials setting in the menu bar.  Then
+        deselect the newly created geometry by pressing Ctrl+D.
+step3:  <b>Step 3</b><br /><br />
+	Create another object, move it by pressing m or selecting the move tool
+        on the tool bar so that it intersects the first object you made. This
+        new object will be the tool object for the boolean process. Don't forget
+        to give it a new colour in the materials editor. Leave this
+        object selected for the time being.
+step4:  <b>Step 4</b><br /><br />
+	In the Actions menu select Boolean.
+step5:  <b>Step 5</b><br /><br />
+	For a subtractive Boolean leave all the setting as they are and press OK.
+step6:  <b>Step 6</b><br /><br />
+	Now the Boolean operation is complete you have four pieces of geometry:
+        tool, workpiece and two cut objects formed from the intersection of the
+        two primary objects.
+step7:  <b>Step 7</b><br /><br />
+	Select none (Ctrl+D) and then object select any vertex within the new
+        booleaned objects.  This will highlight the objects vertices turning them
+        yellow.  Now delete this object.
+step8:  <b>Step 8</b><br /><br />
+	What you have left is the original tool object and a new cut away of the
+        workpiece.
+step9:  <b>Step 9</b><br /><br />
+	With the two objects selected go to the Actions menu and perform a weld
+        command (leave the settings as they are). This will combine the two
+        object into one single object.
+        <br /><br />
+        Have Fun.
+
+
+
+
+

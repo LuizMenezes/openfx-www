@@ -1,0 +1,8 @@
+{heading:Bug tracking}
+<p>
+If you discover any bugs while using the software, please email a bug report to
+<a href="mailto:dev@openfx.org">dev@openfx.org</a> with full details of the problem
+and your build of OpenFX.  We will need exact instructions of how to reproduce the
+bug, after which we will contact you for any extra information we may need.
+</p>
+

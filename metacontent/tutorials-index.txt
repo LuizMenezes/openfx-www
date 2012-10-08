@@ -1,0 +1,17 @@
+{heading:Tutorials}
+<p>
+This page contains a list of tutorials which all give simple step by step
+instructions with corresponding screenshots.  A wide range of design
+and animation techniques will build up in this section which should
+culminate in a comprehensive 'manual of excellence' :)  These tutorials
+are now available in more languages than just english - a list of available
+languages is displayed at the top of each tutorial.
+</p>
+
+{heading:Contributing}
+<p>
+If you feel you can explain a method of using OpenFX to create a building
+block technique that will be useful to others, please submit screenshots
+and brief step by step instructions of your tutorial to
+<a href="mailto:dom@openfx.org?subject=Tutorial%20submission">dom@openfx.org</a>.
+</p>

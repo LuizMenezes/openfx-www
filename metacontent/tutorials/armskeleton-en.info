@@ -1,0 +1,67 @@
+scope:		Animating a skeletal structure
+title:		Animating a skeletal structure
+author:		Tutorial written by <a href="mailto:andrewh@electricant.co.uk">Andrew Heyworth</a>
+steps:		10
+imagesuffix:	jpg
+
+step1:		<b>Step 1</b><br /><br />
+		Make a tube object in designer. This will be a basic arm which will have a skeleton
+		applied to it, so scale and proportion it to look something like an arm.
+		<br /><br />
+		To help with modelling use the subdivided tool (Ctrl+V) to add more detail to selected
+		verticies.
+step2:		<b>Step 2</b><br /><br />
+		Now to add the joints with a basic skeletal frame. The skeleton is just a set of joints
+		attached to selected vertices which will modify the mesh when moved.
+step3:		<b>Step 3</b><br /><br />
+		With nothing selected, select Edit &gt; Skeleton &gt; Build joints.  This will open a
+		floating tool bar.  Hover over each of the buttons in the floating menu will give you a
+		brief description.
+		<br /><br />
+		Select move and click on the root joint (this is the initial joint) it's the small yellow
+		box.  Reposition it at the top of the arm mesh.
+		<br /><br />
+		Think of the root as the shoulder, which in this exercise do not need to move.
+step4:		<b>Step 4</b><br /><br />
+		Now select build in the floating tool bar.  Click on the root and with the left mouse
+		button still held down drag the pointer to the middle of the mesh and let go of the mouse
+		button.  A dialog box will open prompting you for a name for the new joint you just made.
+		Call it elbow.
+step5:		<b>Step 5</b><br /><br />
+		Do the same as above but click on the elbow joint and drag down to the end of the mesh.
+		Call this joint hand.
+step6:		<b>Step 6</b><br /><br />
+		With the joints made and in position we can attached the separate joints to the necessary
+		vertices.  Close the build joints menu and open the Hierarchy Joints floating menu. Select
+		the elbow joint in the hierarchy window. In the rear window lasso the top three rows of
+		vertices (see opposite).  Go back to the hierarchy menu and press attach.  This will assign
+		the selected vertices to the elbow joint.  You can now deselect these vertices by pressing
+		deselect.
+step7:		<b>Step 7</b><br /><br />
+		Do the same for the hand joint but this time select the bottom two rows of vertices (see
+		image).
+		<br /><br />
+		Save your newly make arm and go into animator.
+step8:		<b>Step 8</b><br /><br />
+		Set animation length to 30 frames and load the newly created object as a robot.
+step9:		<b>Step 9</b><br /><br />
+		With the robot loaded insert a key frame in the robots costume time line at frame 15. Make
+		sure the keyframer window is open so that you can see the time line ( press 'k' to open
+		keyframer).  In the camera view press on the Go To Frame button and enter 15. This is the
+		newly created key frame for your arm which is required before you can modify the mesh with
+		your skeleton.
+		<br /><br />
+		Remember a costume keyframe has to be made and the Go To Frame has to be on that frame
+		before you can use the skeleton.
+step10:		<b>Step 10</b><br /><br />
+		Select the robot actor by pressing 'a' and clicking on robot1.  Press 'v' this will display
+		the robot view.  In the robot hierarchy window select the hand joint and rotate it about
+		the y axis in any view port this will create a key frame pose for your object.
+		<br /><br />
+		To create the effect of the object bending insert a key frame at 2 without repositioning any
+		of the joints and follow steps 9-10.
+		<br /><br />
+		Support files are available <a href="{resources}/skeleton-tutorial.zip">here</a>.
+
+
+

@@ -1,0 +1,72 @@
+scope:		Un simple squelette
+title:		Un simple squelette
+author:		Tutoriel écrit par <a href="mailto:keith.kelly@zail.freeservers.com">Keith Kelly</a>
+translator:	Tutoriel traduit par <a href="mailto:bs125525@skynet.be">Jean-luc Songa Butera</a>
+steps:		5
+imagesuffix:	jpg
+
+step1:	<b>1ère étape</b><br /><br />
+	On commence par faire une simple structure à animer. Nous allons faire un tank avec une
+	tourelle mobile. Créer un cube pour la base et un cylindre pour l'affût. J'ai le début de
+	l'affût qui commence à la verticale de l'axe central du cube pour rendre les choses plus
+	aisées.
+step2:	<b>2ème étape</b><br /><br />
+	Choisissez n'importe quel outil de séléction. J'ai trouvé que le menu "Hierarchy Joints"
+	est quelquefois indisponible si vous n'utilisez pas un ou outil de séléction. Allez dans
+	le menu Edit &gt; Hierarchy Joints et appuyez sur le "+". Cliquez sur le 1 qui apparaît
+	dans le menu. attendez une seconde et il devrait basculer dans le mode rename. Entrez le
+	mot "Base" et cliquez ensuite n'importe où dans la fenêtre pop-up sauf sur les boutons.
+	Cette jointure servira à la rotation du modèle par rapport à son centre. Vu que le l'affût
+	devra tourner par rapport à sa base, il doit se trouver dans une sous-section de la base.
+	Cliquez sur la jointure Base si elle n'est pas séléctionnée. Pour vous faciliter les
+	choses, vous devriez repositionner la croix bleue dans la vue 2D AVANT de faire chaque
+	jointure. Apuyez sur "+". Renommez le  2 en "Epaule". Faite de Epaule une autre jointure
+	et renommez-la tourelle. La jointure Epaule est là pour qu'il y ait une jointure au début
+	et à la fin du membre (tourelle). Renommer les jointures est une méthode pratique car
+	elle vous épargne les terribles interrogations du genre : Est-ce que la jointure 5 est
+	lebras droit ou le bras gauche?. Si vous mettez à disposition des autres votre modèle, les
+	jointures nommées sont appréciées par tout le monde. Séléctionnez le cube dans votre modèle.
+	Appuyez sur "Base" dans le menu "Hierarchy Joints". Un des boutons dans la fenêtre pop-up
+	correspont à l'attachement. C'est le sixième bouton à partir de la gauche. appuyz dessus.
+	Maintenant OpenFX connaît le cube comme "Base". Déséléctionnez le cube et séléctionnez le
+	cylindre. Cliquez sur "tourelle" et attachez-le. Fermez le menu "Hierarchy joints". 
+step3:	<b>3ème étape</b><br /><br />
+	Allez dans le menu Edit &gt; Skeleton &gt; Repositions joints. Vous devriez voir un carré
+	bleu clair and 3 cercles avec des lignes les reliant. Si vous n'avez pas repositionné le
+	viseur avant de faire les jointures vous allez avoir des problèmes pour voir les cercles.
+	Tous seront là où vous avez laissez le viseur bleu. Appuyez surle combo Shift-A pour
+	repérer les cercles manquants en gardant à l'esprit que certains cercles peuvent se
+	trouver empilés sur un point. Déplacé le carré de façon à ce qu'il se retrouve au milieu
+	du cube. Déplacé le premier cercle de façon à ce qu'il se retrouve au-dessus du cube.
+	Déplacé le cercle suivant de façon à ce qu'il se trouve au début de l'affût. Déplacé le
+	dernier cercle de l'autre côté de l'affût. Vous avez terminez le squelette de votre tank!
+	C'est le moment idéal pour sauver votre travail. Il se peut que vous ne puissiez plus
+	retrouver cette position donc cette sauvegarde doit constituée votre position neutre,
+	sans pose. Sauvez votre modèle sous un autre nom à partir de maintenant.
+step4:	<b>4ème étape</b><br /><br />
+	Allez dans le menu Edit &gt; Skeleton &gt; Pose ou appuyez sur le combo Shift+A pour
+	allez dans le mode Pose. Votre tank doit apparaître en tant que 2 boîtes avec le squelette
+	visible. Cliquez sur le carré. En tirant avec la souris le modèle entier va tourner autour
+	du carré. Appuyez sur Tab pour déplacer l'indicateur jaune d'axe vers un nouvel axe et un
+	nouveau plan de rotation. Cliqué sur le premier cercle. Ceci va faire tourner la base et
+	tout ce qui en dépend (tel l'affût). Ceci est différent du carré car si vous ajoutiez une
+	nouvelle forme au modèle, le carré le ferait tourner mais pas le premier cercle. Vous
+	avez remarqué à ce niveau que la fenêtre OpenGL ne sera pas renouveler tanta que vous
+	n'utiliserez pas le bouton pan (P) pour bouger une des autres fenêtres (C'est un bug
+	possible de la V1.0). Le cercle final fait tourner la tourelle et tout ce qui se trouve
+	en dessous d'elle dans la hiérarchie (dans ce modèle il n'y a rien en dessous d'elle).
+	Appuyez sur Tab plusieurs fois et vous verrez que l'indicateur d'axe a 3 positions sur le
+	cercle précédant et sur le cercle courant. La quatrième position est l'axe de rotation.
+	Noter que repositionner les jointures va causer leur déplacement de leur vecteurs courants
+	vers d'autres plus bizarres.
+step5:	<b>5ème étape</b><br /><br />
+	Si vous deviez ajouter un autre cylindre à la fin de l'affût, vous pourriez adapter
+	l'affût en forme de bras. Créer une autre jointure sous l'entrée affût dans l'écran
+	"Hierarchy Joint" et attachez le nouveau cylindre to it (Si vous êtes malin vous allez
+	placer le viseur bleu à la fin du nouveau cylindre avant de faire la nouvelle jointure).
+	Repositionnez la jointure si il le faut. Ceci va vous laissez avec un bras avec un un
+	coude jointure. Essayez de faire un deuxième bras d'après le modèle en tant que devoir.
+	<br /><br />
+	Amusez-vous à faire des modèles qui poses.
+	<br /><br />
+	Téléchargez le modèle <a href="{resources}/quicktank.mfx">içi</a>.
